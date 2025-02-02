@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Темы для проекта 9 класс</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Темы для проекта 9 класс</h1>
+        <button id="main-button" onclick="showSubjects()">Не можешь определиться с темой?</button>
+
+        <div id="subjects" style="display:none;">
+            <h2>Выберите предмет:</h2>
+            <div class="subject" onclick="showTopics('math')">Математика</div>
+            <div class="subject" onclick="showTopics('russian')">Русский язык</div>
+            <div class="subject" onclick="showTopics('literature')">Литература</div>
+            <div class="subject" onclick="showTopics('biology')">Биология</div>
+            <div class="subject" onclick="showTopics('chemistry')">Химия</div>
+            <div class="subject" onclick="showTopics('pe')">Физическая культура</div>
+            <div class="subject" onclick="showTopics('informatics')">Информатика</div>
+            <div class="subject" onclick="showTopics('physics')">Физика</div>
+            <div class="subject" onclick="showTopics('obzh')">ОБЖ</div>
+        </div>
+
+        <div id="topics" style="display:none;">
+            <h2 id="topic-header"></h2>
+            <div id="topic-list"></div>
+            <button onclick="backToSubjects()">Назад</button>
+            <div id="problem-description" style="margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
